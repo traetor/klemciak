@@ -27,7 +27,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 const serverUrl = process.env.NODE_ENV === 'production'
-    ? 'https://johnny-systems-backend.vercel.app'
+    ? 'https://klemciak.vercel.app'
     : `http://localhost:${process.env.PORT || 3001}`;
 
 // CDN CSS
