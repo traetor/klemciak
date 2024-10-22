@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "app.js", "use": "@vercel/node" }
+  ],
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/app.js" },
+    { "source": "/api-docs/(.*)", "destination": "/app.js" },
+    { "source": "/(.*)", "destination": "/app.js" }
+  ],
+  "env": {
+    "PORT": "3001",
+    "NODE_ENV": "production"
+  }
+}
